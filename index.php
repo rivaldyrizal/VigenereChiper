@@ -73,50 +73,72 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Hello, world!</title>
+    <title>Algoritme Vinegere Chiper</title>
 </head>
 
 <body>
-    <h1>Vigenere Chiper Algorithm</h1>
-    <br>
-    <form action="" method="post">
-        <div class="form-group">
-            <label for="exampleFormControlTextarea1">Plain text</label>
-            <textarea class="form-control" name="plaintext" id="exampleFormControlTextarea1" rows="3" placeholder="masukkan plain text"></textarea>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Algoritme Vinegere Chiper</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Encrypt <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="decrypt.php">Decrypt</a>
+                </li>
+            </ul>
         </div>
-        <div class="form-group">
-            <label for="exampleInputEmail1">Key</label>
-            <input type="text" class="form-control" name="keytext" id="keytext" aria-describedby="emailHelp" placeholder="masukkan key text">
-        </div>
+    </nav>
 
-        <div class="form-group">
-            <input type="submit" name="submit" value="Encrypt" class="btn btn-info">
-        </div>
-    </form>
+    <div class="container">
+        <br>
+        <form action="" method="post">
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Plain text</label>
+                <textarea class="form-control" name="plaintext" id="exampleFormControlTextarea1" rows="3"
+                    placeholder="masukkan plain text"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Key</label>
+                <input type="text" class="form-control" name="keytext" id="keytext" aria-describedby="emailHelp"
+                    placeholder="masukkan key text">
+            </div>
 
-    <div class="card text-center">
-        <div class="card-header">
-            Hasil Encrypt
-        </div>
-        <div class="card-body">
-            <p class="card-text">
-                <?php 
+            <div class="form-group">
+                <input type="submit" name="submit" value="Encrypt" class="btn btn-info">
+            </div>
+        </form>
+
+        <div class="card text-center">
+            <div class="card-header">
+                Hasil Encrypt
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    <?php 
                 if(isset($result)) {
                     echo "Plain Text: <b>". $str ."</b><br>";
                     echo "Key: <b>". $key . "</b><br>";
                     echo "Encripted Text: <b>". $result ."</b><br>"; 
                 }
                 ?>
-            </p>
-            <!-- <h5 class="card-title">Special title treatment</h5>
+                </p>
+                <!-- <h5 class="card-title">Special title treatment</h5>
             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
             <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            </div>
+            <div class="card-footer text-muted">
+                coded with <span style="color: Tomato;"> <i class="fa fa-heart"></i> </span> by Rivaldi Rizalul Akhsan
+            </div>
         </div>
-        <div class="card-footer text-muted">
-            coded with <span style="color: Tomato;"> <i class="fa fa-heart"></i> </span> by Rivaldi Rizalul Akhsan
-        </div>
-    </div>
 
+        <br>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -131,4 +153,3 @@
 </body>
 
 </html>
-
