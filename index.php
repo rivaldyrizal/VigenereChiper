@@ -100,12 +100,12 @@
         <form action="" method="post">
             <div class="form-group">
                 <label for="exampleFormControlTextarea1">Plain text</label>
-                <textarea class="form-control" name="plaintext" id="exampleFormControlTextarea1" rows="3"
+                <textarea class="form-control" required="required" name="plaintext" id="exampleFormControlTextarea1" rows="3"
                     placeholder="masukkan plain text"></textarea>
             </div>
             <div class="form-group">
                 <label for="exampleInputEmail1">Key</label>
-                <input type="text" class="form-control" name="keytext" id="keytext" aria-describedby="emailHelp"
+                <input type="text" class="form-control" required="required" name="keytext" id="keytext" aria-describedby="emailHelp"
                     placeholder="masukkan key text">
             </div>
 
